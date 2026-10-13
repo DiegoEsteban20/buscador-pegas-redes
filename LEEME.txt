@@ -1,0 +1,32 @@
+﻿BUSCADOR DE PEGAS v2 - Conectividad y Redes
+===========================================
+
+Busca ofertas de trabajo de tu área en GetOnBoard, Computrabajo, Chiletrabajos
+y Talent.com (que a su vez junta avisos de muchos otros portales), descarta lo
+que no es del área, marca las NUEVAS y arma un Excel en Escritorio\Pegas.
+
+USO
+- Doble clic en BuscarPegasAhora.cmd  -> busca ahora y abre el Excel (2-4 min).
+- Doble clic en InstalarAutomatico.cmd -> desde ahí se ejecuta solo cada vez que
+  inicias sesión en Windows (máximo una vez cada 6 horas) y te avisa con una
+  notificación cuando aparecen ofertas nuevas.
+
+EL EXCEL
+- "Más afines": las ofertas más relacionadas con redes/conectividad (★★★ = muy afín).
+- "Nuevas": las que no habías visto antes.
+- "Todas": todo lo que pasó los filtros.
+- "Otros portales": links listos para LinkedIn, Laborum, Trabajando.com, Indeed,
+  DuocLaboral, Empleos Públicos y BNE (esos no permiten lectura automática).
+- Nivel en amarillo = práctica, junior o sin experiencia.
+- Columna Link -> "Postular" abre el aviso.
+
+AJUSTAR (Config.psd1, ábrelo con el Bloc de notas)
+- Busquedas: los términos que se buscan.
+- Incluir / Excluir: palabras del cargo que sí o no te interesan.
+- ExcluirSenior = $true descarta Senior, Jefe, Líder, etc. Ponlo en $false cuando
+  tengas más experiencia.
+- Portales: pon $false para desactivar uno.
+- SoloSantiago = $true deja solo ofertas en Santiago / Región Metropolitana
+  (y las 100% remotas). Ponlo en $false para ver todo Chile.
+
+Registro: BuscadorPegas.log
